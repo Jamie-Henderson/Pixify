@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2A3B49;
+    height: 50px;
+}
+
+.nav-text {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+
+.nav-right {
+    display: flex;
+    gap: 24px;
+    margin-right: 24px;
+}
+
+.nav-title {
+    margin-left: 24px;
+    font-family: 'Montserrat';
+    color: #7BFFE9;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.page-container {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.title-p1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#text {
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+
+.main {
+    display: grid;
+    grid-template-areas: "txt pic"
+    "btn pic";
+
+
+}
+
+.sub-button {
+    grid-area: "btn";
+    font-family: 'Montserrat';
+    font-size: 36px;
+    color: #7BFFE9;
+    border: 2px solid #7BFFE9;
+    border-radius: 60px;
+    padding: 20px 40px 20px 40px;
+    background-color: #2A3B49;
+    width: 418px;
+}
+
+.main-txt {
+    grid-area: txt;
+}
+
+.pic {
+    grid-area: "pic"
+}
+
+@media screen and (max-width: 1000px) {
+    .main {
+        grid-template-areas: "pic"
+        "txt"
+        "btn";
+        text-align: center;
+    }
+    .pic {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+
+.dark-mode {
+    background-color: #2A3B49;
+    color: #FFFFFF;
+    
+}
+
+#dark-mode-btn {
+    border: none;
+    font-family: 'Montserrat';
+    color: #7BFFE9;
+    background: none;
+}

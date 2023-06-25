@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2A3B49;
+    height: 50px;
+}
+
+.nav-text {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+
+.nav-right {
+    display: flex;
+    gap: 24px;
+    margin-right: 24px;
+}
+
+.nav-title {
+    margin-left: 24px;
+    font-family: 'Montserrat';
+    color: #7BFFE9;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.dark-mode {
+    background-color: #2A3B49;
+    color: #FFFFFF;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: "card card"
+    "card card"
+    "card card";
+    width: 40%;
+    gap: 60px;
+    margin-left: 60px;
+}
+
+.pic {
+    width: 100%;
+    height: 90%;
+    border-radius: 8px;
+    
+}
+
+.photoCard {
+    grid-area: "card";
+    text-decoration: none;
+    color: black;
+}
+
+.info {
+    font-family: 'montserrat';
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.cardInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.pageContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #2A3B49;
+    padding: 30px 30px 60px 30px;
+    border-radius: 8px;
+    width: 481px;
+    height: 608px;
+    margin-right: 60px;
+}
+
+
+.formTitle {
+    font-family: 'Montserrat';
+    color: #FFFFFF;
+}
+
+.formInput {
+    font-family: 'Montserrat';
+    border-radius: 8px;
+    padding: 8px;
+    width: 360px;
+}
+
+.formInput::placeholder {
+    font-family: 'Montserrat';
+}
+
+.subBtn {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    border: 2px solid #7BFFE9;
+    border-radius: 60px;
+    padding: 10px 10px 10px 10px;
+    color: #7BFFE9;
+    background-color: #2A3B49;
+    width: 257px;
+}
+
+.seeMore {
+    font-family: 'Montserrat';
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.title {
+    font-family: 'Montserrat';
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+#dark-mode-btn {
+    border: none;
+    font-family: 'Montserrat';
+    color: #7BFFE9;
+    background: none;
+}
+
+@media screen and (max-width: 1400px) {
+    .grid-container {
+        grid-template-areas: "card"
+        "card"
+        "card"
+        "card";
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .pageContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .grid-container {
+        grid-template-areas: "card card"
+        "card card";
+        width: 80%;
+        padding-bottom: 60px;
+    }
+    .titleContainer {
+        width: 100%;
+    }
+}
+
